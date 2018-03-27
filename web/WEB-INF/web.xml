@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!--显示主页-->
+    <servlet>
+        <servlet-name>CustomerServlet</servlet-name>
+        <servlet-class>com.yu.demo.controller.CustomerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerServlet</servlet-name>
+        <url-pattern>/customer/saveCustomer</url-pattern>
+    </servlet-mapping>
+
+    <!--查询客户-->
+    <servlet>
+        <servlet-name>findCustomer</servlet-name>
+        <servlet-class>com.yu.demo.controller.FindCustomer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>findCustomer</servlet-name>
+        <url-pattern>/customer/findCustomer</url-pattern>
+    </servlet-mapping>
+
+    <!--添加客户-->
+    <servlet>
+        <servlet-name>addCustomer</servlet-name>
+        <servlet-class>com.yu.demo.controller.AddCustomer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addCustomer</servlet-name>
+        <url-pattern>/customer/addCustomer</url-pattern>
+    </servlet-mapping>
+
+    <!--删除客户-->
+    <servlet>
+        <servlet-name>deleteCustomer</servlet-name>
+        <servlet-class>com.yu.demo.controller.DeleteCustomer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteCustomer</servlet-name>
+        <url-pattern>/customer/deleteCustomer</url-pattern>
+    </servlet-mapping>
+
+    <!--修改客户-->
+    <servlet>
+        <servlet-name>updateCustomer</servlet-name>
+        <servlet-class>com.yu.demo.controller.UpdateCustomer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateCustomer</servlet-name>
+        <url-pattern>/customer/updateCustomer</url-pattern>
+    </servlet-mapping>
+
+    <!--保存修改的客户信息-->
+    <servlet>
+        <servlet-name>changeCustomer</servlet-name>
+        <servlet-class>com.yu.demo.controller.ChangeCustomer</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>changeCustomer</servlet-name>
+        <url-pattern>/customer/changeCustomer</url-pattern>
+    </servlet-mapping>
+</web-app>
