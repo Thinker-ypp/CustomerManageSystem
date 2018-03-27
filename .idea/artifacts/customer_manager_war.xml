@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="customer-manager:war">
-    <output-path>$PROJECT_DIR$/out/artifacts/customer_manager_war</output-path>
-    <root id="archive" name="customer-manager_war.war">
-      <element id="artifact" artifact-name="customer-manager:war exploded" />
-      <element id="dir-copy" path="$PROJECT_DIR$/web" />
-    </root>
-  </artifact>
-</component>
